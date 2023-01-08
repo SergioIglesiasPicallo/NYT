@@ -1,0 +1,224 @@
+.gen-container {
+    display: grid;
+    grid-template-columns: 37% 26% 37%;
+    grid-template-rows: 23% 54% 23%;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    background-image: url("../Img/wallpaper.jpeg");
+}
+
+span {
+    color: white;
+    margin-right: 5px;
+}
+
+#formLogin {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.305);
+    width: 320px;
+    height: 550px;
+    margin-left: 100%;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    border: 3px solid black;
+    font-size: 1.1rem;
+    font-weight: 100;
+    box-shadow: 0px 0px 30px 5px white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+#formRegister {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.305);
+    width: 320px;
+    height: 500px;
+    margin-left: 100%;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+nav{
+    background-color: transparent;
+}
+
+
+#alreadyRegistered,
+#notRegistered {
+
+    color: rgb(129, 12, 12);
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+
+}
+
+#buttonLoginDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#googleLogin {
+
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#googleLogin:hover {
+    filter: brightness(90%);
+}
+
+#gitHubLogin {
+
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#gitHubLogin:hover {
+    filter: brightness(70%);
+}
+
+#facebookLogin {
+
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+#facebookLogin:hover {
+    filter: brightness(70%);
+}
+
+
+#textLogin {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    font-style: italic;
+    padding: 0.8rem;
+    width: 180px;
+
+}
+
+input:hover {
+
+    filter: brightness(90%);
+
+}
+
+#iconLogin {
+    width: 50px;
+}
+
+
+
+#buttonLoginDivRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+hr {
+    width: 100px;
+    border: 0.5px solid rgba(0, 0, 0, 0.304);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+.loads {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 340px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.loads:after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 80px;
+    border: solid 10px transparent;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: loads 1.2s infinite;
+}
+
+@keyframes loads {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+

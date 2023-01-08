@@ -1,0 +1,110 @@
+.loads {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  margin-top: 340px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loads:after {
+  content: "";
+  display: block;
+  border-radius: 40%;
+  width: 45%;
+  height: 45%;
+  margin-bottom: 80px;
+  border: solid 10px transparent;
+  border-top-color: rgb(7, 115, 231);
+  border-left-color: rgb(7, 115, 231);
+  border-radius: 50%;
+  animation: ease-in 1.2s infinite;
+}
+
+@keyframes loads {
+  0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+      transform: rotate(450deg);
+      animation-timing-function: cubic-bezier(0.115, 0.61, 0.355, 1);
+  }
+  75% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+      transform: rotate(1800deg);
+  }
+}
+
+@keyframes loads {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #fafafa;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 5px solid #fff;
+    border-radius: 100%;
+  }
+  
+  .first {  
+    margin: -30px 0 0 -30px;
+    height: 60px;
+    width: 60px;
+    border-top-color: #fbe9ea;
+    animation: loading 3s infinite linear;
+  }
+  
+  .second {  
+    margin: -20px 0 0 -20px;
+    height: 40px;
+    width: 40px;
+    border-top-color: #e16971;
+    animation: loading 2s infinite linear;
+  }
+  
+  .third {  
+    margin: -10px 0 0 -10px;
+    height: 20px;
+    width: 20px;
+    border-top-color: #941e25;
+    animation: loading 1s infinite linear;
+  }

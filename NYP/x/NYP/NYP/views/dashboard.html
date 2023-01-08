@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book API</title>
+    <link rel="icon" type="image/x-icon" href="../Img/newYorkTimes.ico">
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/dashboard.css">
+    <link rel="stylesheet" href="../Styles/details.css">
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/spiner.css">
+    <link rel="stylesheet" href="../views/dashboard.html">
+    <link rel="stylesheet" href="../views/profile.html">
+    <link rel="stylesheet" href="../views/details.html">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../Services/logoutDashboard.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <nav id="navDashboard">
+        <span class="material-symbols-outlined">
+            person
+        </span><a href="profile.html" id="myProfile" class="myProfile">Profile</a>
+        <a id="logout" class="logged-in">Log Out</a>
+    </nav>
+
+    <header id="tituloWeb">
+
+        <h1 id="tituloHeader">New York Times</h1>
+
+        <br>
+
+        <p id="best">Best Sellers</p>
+
+    </header>
+
+    <div id="titleBooks">
+
+        <div id="h2">
+            <h2>All categories</h2>
+        </div>
+    </div>
+
+    <div class="loads" id="spinner"></div>
+
+    <div id="allListBooks" class="hidden">
+    </div>
+
+
+
+    <script src="../Services/api.js"></script>
+    <script src="../Services/dashboard.js"></script>
+
+</body>
+
+</html>

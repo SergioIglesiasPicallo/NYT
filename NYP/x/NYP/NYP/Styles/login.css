@@ -221,4 +221,26 @@ hr {
     }
 }
 
+@media(min-width: 600px) {
 
+    #bookDetails {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media(min-width: 900px) {
+
+        #bookDetails {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    @media(min-width: 1200px) {
+
+        #bookDetails {
+
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        }
+    }
+
+}

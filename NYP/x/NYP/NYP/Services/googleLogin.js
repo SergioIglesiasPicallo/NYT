@@ -39,7 +39,10 @@ buttonRegisterGoogle.addEventListener('click', async () => {
         let errorCode = error.code;
         let errorMessage = error.message;
         // console.log(errorCode)
-
+        /**
+         * Corrección
+         * Si vas a englobar el código con un try-catch, la sección catch debe tener un flujo
+         */
     }
 
 })

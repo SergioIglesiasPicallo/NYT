@@ -31,6 +31,10 @@ loginForm.addEventListener('submit', async (e) => {
     } catch (error) {
         let errorCode = error.code;
         let errorMessage = error.message;
+        /**
+         * Corrección
+         * En este caso debemos usar un Switch
+         */
         if (errorCode === "auth/invalid-email") {
             showMessageLogin("Invalid Email. Please, try again.", "error")
             spinnerElement.style.display = 'none'

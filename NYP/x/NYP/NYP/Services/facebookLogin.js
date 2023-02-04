@@ -40,7 +40,10 @@ buttonRegisterFacebook.addEventListener('click', async () => {
     } catch (error) {
         let errorCode = error.code;
         let errorMessage = error.message;
-
+        /**
+         * Corrección
+         * Si vas a englobar el código con un try-catch, la sección catch debe tener un flujo
+         */
 
     }
 

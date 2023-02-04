@@ -31,6 +31,10 @@ setTimeout(function () {
         arrBookFavs = []
     }
 
+    /**
+     * Corrección
+     * Debemos usar un For..OF
+     */
     for (let i = 0; i < imgElement.length; i++) {
 
         let title = booksObject[i].title

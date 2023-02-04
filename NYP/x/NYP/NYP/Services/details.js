@@ -10,6 +10,10 @@ async function callBookDetails() {
 
     spinnerElement.setAttribute('class', 'hidden')
     bookDetailsInfo.removeAttribute('class', 'hidden')
+    /**
+     * Corrección
+     * Esta variable no se usa
+     */
     const postAllDetails = document.getElementById('listNames')
     const listNameBook = document.createElement('h4')
     listNameBook.setAttribute("id", "listBookName")

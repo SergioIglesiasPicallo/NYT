@@ -1,3 +1,7 @@
+/*
+Corrección
+Debemos ordenar el contenido de los estilos por orden alfabético
+*/
 .gen-container {
     display: grid;
     grid-template-columns: 37% 26% 37%;
